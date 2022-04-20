@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body{
+            margin: 20px;
+            font: normal 15pt arial;
+            background-color: aquamarine;
+        
+        }
+
+        .email{
+            margin-left: 2px;
+            color: white;
+        }
+
+        h1{
+            color: blue;
+            font-size: 50pt;
+            text-align: center;
+        }
+
+        .butao{
+            margin-left: 500px;
+        }
+        .sapinho{
+            float: right;
+            width: 450px;
+            height: 300px;
+           
+        
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Entre em contato conosco</h1>
+</header>
+<main>
+
+<section>
+    <form action="">
+        <label for="nome">Nome: </label><br>
+        <input type="text" id="nome">
+            <br> <br>
+
+            <img src="assets/meme-sapinho.gif" class="sapinho" alt="Gif de um sapinho com telefone">
+</section>
+
+<section>
+        <label for="email">Email: </label><br>
+        <input type="email" class="email" id="nome">
+            <br> <br>
+</section>
+
+<section>
+        <label for="assunto">Assunto </label><br>
+        <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+        <!-- o textarea cria um campo maior, sendo que cols é o número de colunas e rows o de linhas. -->
+        <br><br>
+</section>
+
+<section>
+        <input type="button" class="butao" value="Enviar">
+</section>
+<!-- criei um botão acima para enviar os dados do contato. -->
+
+</form>
+
+</main>
+    
+</body>
+</html>
