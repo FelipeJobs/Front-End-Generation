@@ -1,0 +1,82 @@
+/* estilização da página da nossa primeira página criada. */
+
+/* estilizando os paragrafos e títulos da página. */
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+   
+}
+
+p{
+    line-height: 2;
+    color: white;
+}
+
+/* estilizando a imagem de trabalho */
+.trabalho{
+  justify-content: center;
+  display: flex;
+   
+    
+}
+/* estilizando o vídeo  da página */
+.video{
+    justify-content: center;
+    display: flex;  
+}
+
+.nav{
+    color: darkturquoise;
+
+}
+/* estilizando a imagem e o texto relacionado ao html */
+.content{
+    justify-content: left;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+/* estilizando a imagem e o texto relacionado ao CSS */
+
+.css{
+    justify-content: right;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+/* estilizando o menu de navageção da página */
+
+.navegador li{
+    display: inline;
+    justify-content: center;
+    color: cornflowerblue;
+    padding: 10px;
+    
+}
+
+/* com esse comando quando a pessoa clicar no link ele vai ficar vermelho */
+.navegador li a:active{
+    color: brown;
+}
+
+.center{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(96, 146, 46);
+}
+
+.rs{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    padding: 20px;
+}

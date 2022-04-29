@@ -1,0 +1,30 @@
+/* estilização da página de contato */
+
+.email{
+    margin-left: 2px;
+    color: black;
+}
+
+h1{
+    color: blue;
+    font-size: 50pt;
+    text-align: center;
+}
+
+/* estilizando a imagem da página */
+.sapinho{
+    float: right;
+    width: 450px;
+    height: 300px;
+  
+}
+
+/* estilizando o menu da página */
+.navegador li{
+    display: inline-flex;
+    padding: 10px;
+}
+
+.navegador li a:active{
+    color: brown;
+}

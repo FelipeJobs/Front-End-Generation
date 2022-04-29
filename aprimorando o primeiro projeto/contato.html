@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contato.css">
     <title>Contato</title>
     <style>
         body{
@@ -12,30 +13,6 @@
             background-color: aquamarine;
         
         }
-
-        .email{
-            margin-left: 2px;
-            color: white;
-        }
-
-        h1{
-            color: blue;
-            font-size: 50pt;
-            text-align: center;
-        }
-
-        .butao{
-            margin-left: 500px;
-        }
-        .sapinho{
-            float: right;
-            width: 450px;
-            height: 300px;
-           
-        
-        }
-
-
 
     </style>
 
@@ -51,33 +28,57 @@
 <section>
     <form action="">
         <label for="nome">Nome: </label><br>
-        <input type="text" id="nome">
-            <br> <br>
+        <input type="text" id="nome" onkeyup= "validaNome()">
 
-            <img src="assets/meme-sapinho.gif" class="sapinho" alt="Gif de um sapinho com telefone">
+       <div id="nm">
+
+       </div>
+       <br>
+            
+        <!-- criei essa div para utilizar no JS para validação do campo nome. -->
+        <div id='nm'> </div>
+
+            <img class="sapinho" src="assets/meme-sapinho.gif" alt="Gif de um sapinho com telefone">
 </section>
 
 <section>
         <label for="email">Email: </label><br>
-        <input type="email" class="email" id="nome">
-            <br> <br>
+        <input type="email" class="email" id="email" onkeyup="validaemail()">
+            
+        <div id="textemail">
+           <!-- vou usar essa div para validar o email. -->
+        </div>
+        <br>
 </section>
 
 <section>
         <label for="assunto">Assunto </label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+        <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaassunto()"></textarea>
         <!-- o textarea cria um campo maior, sendo que cols é o número de colunas e rows o de linhas. -->
-        <br><br>
+        <div id="textassunto"></div>
+        <br>
 </section>
 
 <section>
-        <input type="button" class="butao" value="Enviar">
+        <button class="butao" onclick="enviar()"> Enviar</button>
 </section>
 <!-- criei um botão acima para enviar os dados do contato. -->
 
 </form>
 
 </main>
+
+<nav>
+    <ul class="navegador">
+        <li class=><a href="PrimeiraPagina.html" class=>Home</a></li>
+        <li class=><a href="contato.html"  target="_blank">Contato</a></li>
+    </ul>
+
+</nav>
     
+<!-- é aqui que normalmente eu importo o script da página, ou seja, antes de finalizar o body. -->
+
+<script src="JS/contato.js"></script>
+<!-- Acima eu fiz o importo do código de JS. -->
 </body>
 </html>

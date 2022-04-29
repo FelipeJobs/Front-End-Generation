@@ -7,46 +7,59 @@
         <meta name="author" content="Felipe">
         <meta name="description" content="HTML e CSS são muito importante para qualquer desenvolvedor web, quer saber mais veem conosco conhecer essas linguagens.">
         <meta name="keywords" content="html5, tecnologia,css">
-        <link rel="stylesheet" href="assets/PrimeiraPaginaStyle.css">
-            <style>
-
-        body{
-                    
-        margin: 30px;
-        font-size: 22px;
-        font-family: arial;
-        color: white;
-        background-image: url("assets/tec.jpg" );
-        background-size: cover;
-       
-       
-        }  
+        <link rel="stylesheet" href="css/primeirapag.css">
+        <style>
+           body{
+                margin: 30px;
+                font-size: 22px;
+                font-family: arial;
+                color: white;
+                background-image: url("assets/tec.jpg" );
+                background-size: cover;
                 
-            </style>
+            } 
+            
+        </style>
 
     </head>
     
     <body>
-        <div class="corpo">
        <header>
         <h1>O que é HTML e CSS</h1>
         <br>
     </header>
 
-        <main class="no">
+        <main>
     <section>
-        <img src="assets/html5.png" class="html" alt="Logo do html 5">
-        <p>
-            É uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir. 
-            <p> A sintaxe do HTML foi criada para ser de fácil entendimento tanto para nós quanto para a máquina, além disso você não precisa de nada mais do que um editor simples. Como vimos, HTML é uma linguagem de marcação. Essas marcações são chamadas de tags, que são abertas e depois fechadas. É com as tags que dizemos para o navegador o que é um título, parágrafo, botão, formulário, dentre outros.</p>
+        <div class="content">
+        
+            <div >
+                <img src="assets/html5.png" alt="Logo html5">
+            </div>
+            <div>
+                <p>
+                É uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir. 
+                A sintaxe do HTML foi criada para ser de fácil entendimento tanto para nós quanto para a máquina, além disso você não precisa de nada mais do que um editor simples. Como vimos, HTML é uma linguagem de marcação. Essas marcações são chamadas de tags, que são abertas e depois fechadas. É com as tags que dizemos para o navegador o que é um título, parágrafo, botão, formulário, dentre outros.</p>
+                <br>
+            </div>
+        </div>
 </p>
 </section>
         
 <section>
-    <img src="assets/css3.png" class="css" alt="Logotipo do CSS">
+    <div class="css">
+        
+        <div>
+            <p>
+                O CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML, ou seja, definir a aparência das páginas, para deixá-las visualmente mais bonitas e agradáveis, podendo alterar a fonte, cor, posicionamento dos elementos, layout e muito mais.</p>
+        </div>
+
+        <div>
+            <img src="assets/css3.png"  alt="Logotipo do CSS">
     <br>
-        <p>
-         O CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas HTML, ou seja, definir a aparência das páginas, para deixá-las visualmente mais bonitas e agradáveis, podendo alterar a fonte, cor, posicionamento dos elementos, layout e muito mais.</p>
+        </div>
+        
+    </div>     
 </section>
          <br>
 
@@ -57,15 +70,18 @@
     A maioria das páginas da Internet são escritas em HTML e estilizadas usando CSS, daí podemos ver a sua incontornável importância. Você pode começar a aprender a criar suas próprias páginas e, mais para frente, ter a capacidade de desenvolver telas para sites, aplicativos mobile, sistemas web e desktop.
 </p>
 <p>Dessa forma, é evidente que saber HTML e CSS é importante para qualquer pessoa que queira se tornar um desenvolvedor, principalmente se busca se especializar no Front End, ou seja, cuidar da parte do designe da aplicação.</p>
+<div class="trabalho">
+<img src="assets/trabalho.jpg"  alt="Mercado de trabalho"> 
+</div>
 
-<img src="assets/trabalho.jpg" class="trabalho" alt="Mercado de trabalho">
-    <br> <br>
+<br> <br>
+
 </section>
 
 <section>
 <h2>Caso queira fazer seu primeiro projeto veja o vídeo abaixo.</h2> 
-
-<iframe width="645" height="363" src="https://www.youtube.com/embed/wwqOJ2o84S4" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video">
+<iframe width="645" height="363" src="https://www.youtube.com/embed/wwqOJ2o84S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
 </section>
 
 <!-- acima coloquei um vídeo, nele eu defini o tamanho e também o que poderá ser feito como colocar em tele cheia, dar autoplay, etc. -->
@@ -75,12 +91,42 @@
 </main>
 
 <nav>
+    <div class="navegador">
     <ul>
         <li><a href="PrimeiraPagina.html" class="nav">Home</a></li>
         <li><a href="contato.html" class="nav" target="_blank">Contato</a></li>
     </ul>
+</div>
 
 </nav>
+
+<footer>
+  
+<section>
+    <div class="video">
+        <a href="https://br.linkedin.com/" target="_blank">
+        
+        <img class="rs" src="assets/linkedin.png" alt="Logo do Linkedin">
+    </a>
+
+    <a href="https://pt-br.facebook.com/" target="_blank">
+        <img class="rs" src="assets/facebook.png" alt="Logo do facebook">
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <img class="rs" src="assets/instagram.png" alt="Logo do Istagram">
+    </a>
+       
 </div>
+</section>
+    <hr>
+<section>
+    <p class="center"> <b> Conteúdo desenvolvido por Lipe Santos </b></p>
+</section>
+
+
+
+</footer>
+
     </body>
 </html>
